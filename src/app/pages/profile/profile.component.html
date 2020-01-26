@@ -1,0 +1,301 @@
+<div class="image-section">
+    <div class="row m-auto">
+        <div class="col-lg-5 p-0">
+            <div class="img-col-6">
+                <img src="../../../assets/images/image-17.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 p-0">
+            <div class="img-col-6">
+                <img src="../../../assets/images/image-20.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 p-0">
+            <div class="img-col-4">
+                <img src="../../../assets/images/image-19.png" alt="">
+
+
+            </div>
+            <div class="img-col-4">
+                <img src="../../../assets/images/image-21.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="d-flex justify-content-between content">
+                    <div class="d-flex">
+                        <h4 class="h-name">Saloon Name</h4><i class="fa fa-circle"></i>
+                        <p class="p-status">Online</p>
+                    </div>
+
+                    <div class="icons ">
+                        <i class="fa fa-home"></i>
+                        <i class="fa fa-user"></i>
+                        <i class="fa fa-wifi"></i>
+                    </div>
+                </div>
+                <ngb-rating [(rate)]="currentRate" max="5" class="star"></ngb-rating> <span
+                    class="current-rate">{{currentRate}}</span>
+
+
+                <div class="d-flex justify-content-between content">
+                    <div class="btn active-btn">Categories</div>
+                    <div class="btn nonActive-btn">Offers</div>
+                    <div class="btn nonActive-btn">Package</div>
+                    <div class="btn nonActive-btn">Employees</div>
+                    <div class="btn nonActive-btn">Details</div>
+                </div>
+
+                <p class="collapse-btn">
+                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                        aria-controls="collapseExample">
+                        <i class="fa fa-eye"></i>
+                        Eyebrows
+                        <i class="fa fa-angle-right"></i> <i class="fa fa-angle-down"></i>
+
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseExample">
+                    <div class="content-collapse d-flex justify-content-between" *ngFor="let item of [1,1]">
+                        <div class="row m-auto">
+                            <!-- <div class="circle-empty"></div> -->
+
+                            <div class="col-sm-8 p-0">
+
+                                <div class="collapse-content">
+                                    <h6>Lorem, ipsum is simply</h6>
+                                    <ngb-rating [(rate)]="currentRate" max="5" class="star-collapse"></ngb-rating> <span
+                                        class="current-rate-collapse">{{currentRate}}</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <div class="right-content">
+                                    <div class="d-flex">
+                                        <p class="p-price"> 30.000 EGP</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <i class="fa fa-clock"></i>
+                                            <p> 30 Min</p>
+                                        </div>
+
+                                        <div class="d-flex">
+
+                                            <i class="fa fa-home"></i>
+                                            <p> Home Service</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <p class="collapse-btn">
+                    <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true"
+                        aria-controls="collapseExample2">
+                        <i class="fa fa-eye"></i>
+                        Hair Care
+                        <i class="fa fa-angle-right"></i> <i class="fa fa-angle-down"></i>
+
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseExample2">
+                    <div class="content-collapse d-flex justify-content-between" *ngFor="let item of [1,1]">
+                        <div class="row m-auto">
+                            <!-- <div class="circle-empty"></div> -->
+
+                            <div class="col-sm-8 p-0">
+
+                                <div class="collapse-content">
+                                    <h6>Lorem, ipsum is simply</h6>
+                                    <ngb-rating [(rate)]="currentRate" max="5" class="star-collapse"></ngb-rating> <span
+                                        class="current-rate-collapse">{{currentRate}}</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <div class="right-content">
+                                    <div class="d-flex">
+                                        <p class="p-price"> 30.000 EGP</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <i class="fa fa-clock"></i>
+                                            <p> 30 Min</p>
+                                        </div>
+
+                                        <div class="d-flex">
+
+                                            <i class="fa fa-home"></i>
+                                            <p> Home Service</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <p class="collapse-btn">
+                    <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true"
+                        aria-controls="collapseExample3">
+                        <i class="fa fa-eye"></i>
+                        Body
+                        <i class="fa fa-angle-right"></i> <i class="fa fa-angle-down"></i>
+
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseExample3">
+                    <div class="content-collapse d-flex justify-content-between" *ngFor="let item of [1]">
+                        <div class="row m-auto">
+                            <!-- <div class="circle-empty"></div> -->
+
+                            <div class="col-sm-8 p-0">
+
+                                <div class="collapse-content">
+                                    <h6>Lorem, ipsum is simply</h6>
+                                    <ngb-rating [(rate)]="currentRate" max="5" class="star-collapse"></ngb-rating> <span
+                                        class="current-rate-collapse">{{currentRate}}</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <div class="right-content">
+                                    <div class="d-flex">
+                                        <p class="p-price"> 30.000 EGP</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <i class="fa fa-clock"></i>
+                                            <p> 30 Min</p>
+                                        </div>
+
+                                        <div class="d-flex">
+
+                                            <i class="fa fa-home"></i>
+                                            <p> Home Service</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 margin-col-4">
+                <app-profile-map></app-profile-map>
+                <div class="switch-home d-flex justify-content-between">
+                    <div class="d-flex">
+                        <i class="fa fa-home"></i>
+                        <p class="header-switch"> Home Service</p>
+                    </div>
+                    <div>
+                        <label for="">Off</label>
+                        <ui-switch size="small" color="#9e457b" switchColor="#fcfcfc"></ui-switch>
+                    </div>
+
+                </div>
+
+
+                <div class="work-hour">
+                    <div class="d-flex">
+                        <i class="fa fa-clock"></i>
+                        <h4 class="header-work">Open Hours</h4>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="p-content-work">Monday - Sunday</p>
+
+                        <p class="p-content-work">11:00 PM - 12:00 PM</p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="comments">
+                    <div class="d-flex  justify-content-between">
+                        <div class="d-flex">
+                            <i class="fas fa-comment"></i>
+                            <h4 class="header-work">Comments</h4>
+                        </div>
+                        <a href="javascript:;" class="all-comments">All Comments</a>
+                    </div>
+                    <div class="row m-auto comment" *ngFor="let item of [1]">
+                      <div class="col-lg-2 p-0">
+                          <img class="profile-img" src="https://d338fazgvezi86.cloudfront.net/static/img/default-user.png" alt="">
+                      </div>
+                      <div class="col-lg-10">
+                          <h6 class="name">Nehmedo is.</h6>
+                          <p class="date">Today 10:05 pm</p>
+                          <input type="text" class="send-comment" value="Wow ! This awesome Place"> 
+                          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+
+                      </div>
+                    </div>
+
+                    <div class="row m-auto child-comment" >
+                        <i class="fas fa-redo class-repliy"></i>
+                        <div class="col-lg-2 p-0">
+                            <img class="profile-img-child" src="https://d338fazgvezi86.cloudfront.net/static/img/default-user.png" alt="">
+                        </div>
+                        <div class="col-lg-10">
+                            <h6 class="name">Nehmedo is.</h6>
+                            <p class="date">Today 10:05 pm</p>
+                            <input type="text" class="send-comment" value="Wow ! This awesome Place"> 
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+  
+                        </div>
+                      </div>
+
+                      <div class="row m-auto comment" >
+                        <div class="col-lg-2 p-0">
+                            <img class="profile-img" src="https://d338fazgvezi86.cloudfront.net/static/img/default-user.png" alt="">
+                        </div>
+                        <div class="col-lg-10">
+                            <h6 class="name">Nehmedo is.</h6>
+                            <p class="date">Today 10:05 pm</p>
+                            <input type="text" class="send-comment form-me" placeholder="Enter Your Comment"> 
+                            <button class="btn btn-comment" >Comment</button>
+  
+                        </div>
+                      </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>

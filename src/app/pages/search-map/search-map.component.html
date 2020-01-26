@@ -1,0 +1,93 @@
+<div class="search-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 ">
+                <div class="search-div">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="" id="" placeholder="Write saloon name , location …">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-search">
+                    Search
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row dropdows">
+        <div class="dropdown">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+                Area
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">Area
+                    {{i + 1}}</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+                Categories
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">Categories
+                    {{i + 1}}</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+                Price
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">12{{i + 1}}</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+                Price
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">
+                    {{i + 1}}</a>
+            </div>
+
+        </div>
+
+        <div class="switch-map">
+            <ui-switch size="small" color="#9e457b" switchColor="#fcfcfc"  (valueChange)="onValueChange($event)"></ui-switch>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="res">
+        <h4 class="res-header"> Result</h4>
+        <p>We Found 20,000 results</p>
+    </div>
+    <div class="row">
+        <div [ngClass]="searchClass">
+            <div class="row">
+                <div class="col-lg-4" *ngFor="let item of [1,1,1,1,1,1,1,1,1]">
+                    <app-product></app-product>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" *ngIf="searchMap">
+            <app-search-map-child></app-search-map-child>
+        </div>
+
+    </div>
+</div>

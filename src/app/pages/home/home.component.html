@@ -1,0 +1,114 @@
+<div class="flash-sale">
+    <div class="container">
+        <p>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+
+            Flash Sale On For 03 : 20 h For <a href="javascript:;"> Beauty Salon</a></p>
+    </div>
+</div>
+<div class="header-home-section"
+    style="background-image: url(../../../../../assets/images/1BD070C49-3321-4D33-BA4F-2CC2054B84D2.png);">
+    <div class="container">
+        <div class="header-content">
+            <h2>
+                Your Beauty Start From Here
+            </h2>
+            <p>
+                We Have New App Feature you can download it
+            </p>
+        </div>
+
+        <div class="relative">
+            <div class="search-advance">
+                <div class="row search-div">
+                    <div class="col-md-4 p-0 search search-location d-flex">
+                        <i class="fa fa-search"></i>
+                        <input type="search" name="" id="" placeholder="Write saloon name , location …">
+                        <button class="btn btn-location">
+                            <i class="fa fa-globe"></i> </button>
+                    </div>
+                    <div class="col-md-2 p-0 search border-left search-location  dropdown">
+
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            Categories
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">Category
+                                {{i + 1}}</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 p-0 search border-left search-location  dropdown">
+
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            Cities
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">City
+                                {{i + 1}}</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 p-0 search border-left search-location  dropdown">
+
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            Area
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" *ngFor="let item of [1,1,1,1,1]; let i = index">Area
+                                {{i + 1}}</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 search p-0 border-left">
+                        <button class="btn btn-search" [routerLink]="['/search-map']" >Search </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container offers">
+    <h2>Offers</h2>
+    <p>Get the new offers</p>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let item of [1,1,1,1,1,1,1,1]">
+            <app-product></app-product>
+        </div>
+    </div>
+
+    <h4 class="show-all">Show All (+ 3000)</h4>
+
+</div>
+
+<div class="container offers">
+    <h2>Recommended</h2>
+    <p>Get the new offers</p>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let item of [1,1,1,1,1,1,1,1]">
+            <app-product></app-product>
+        </div>
+    </div>
+
+    <h4 class="show-all">Show All (+ 3000)</h4>
+
+</div>
+
+<div class="container offers">
+    <h2>Categories</h2>
+    <p>Check our Categories and select the best</p>
+    <div class="row">
+        <div class="col-lg-2" *ngFor="let item of [1,1,1,1,1,1]">
+            <app-category></app-category>
+        </div>
+    </div>
+
+
+</div>

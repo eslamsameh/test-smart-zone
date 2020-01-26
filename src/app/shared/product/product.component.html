@@ -1,0 +1,27 @@
+<div class="card" [routerLink]="['/profile']"  >
+    <div class="image-product">
+        <img src="../../../assets/images/product.png" alt="">
+    </div>
+    <div class="LabelBG">
+        20% off
+    </div>
+    <div class="Heart">
+        <i class="fa fa-heart"></i>
+    </div>
+    <div class="row margin-top-row">
+        <div class="col-lg-8 margin-col">
+            <h6 class="sal-name">Saloon Name</h6>
+            <p class="sal-loc">Egypt , Cairo </p>
+
+            <ngb-rating [(rate)]="currentRate" max="5" class="star"></ngb-rating> <span class="current-rate">{{currentRate}}</span>
+        </div>
+        <div class="col-lg-4 p-0">
+            <div class="icons ">
+                <i class="fa fa-home"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-wifi"></i>
+            </div>
+            <p class="p-count">1.6 M</p>
+        </div>
+    </div>
+</div>
